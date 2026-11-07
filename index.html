@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>飞机大战 · 像素空战</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#05070f">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="480" height="856"></canvas>
+
+  <div class="top-btns">
+    <button id="btn-pause" class="icon-btn hidden">暂停</button>
+    <button id="btn-mute" class="icon-btn">音效</button>
+  </div>
+  <button id="btn-bomb" class="bomb-btn hidden">炸弹 ×1</button>
+
+  <div id="overlay-title" class="overlay">
+    <h1>飞机大战</h1>
+    <p class="sub">PLANE WAR · PIXEL STRIKE</p>
+    <p class="best">最高分 <b id="title-best">0</b></p>
+    <button id="btn-start" class="primary">开始游戏</button>
+    <p class="hint">移动：手指拖动 / 鼠标跟随 / WASD 或方向键<br>炸弹：B 或 J 键 · 暂停：P 或 Esc</p>
+  </div>
+
+  <div id="overlay-pause" class="overlay">
+    <h2>已暂停</h2>
+    <div class="row-btns">
+      <button id="btn-resume" class="primary">继续</button>
+      <button id="btn-restart-pause" class="ghost">重新开始</button>
+    </div>
+    <p class="hint">P / Esc 可继续</p>
+  </div>
+
+  <div id="overlay-gameover" class="overlay">
+    <h2>游戏结束</h2>
+    <div class="stats">
+      <div class="row"><span>得分</span><b id="over-score">0</b></div>
+      <div class="row"><span>最高分</span><b id="over-best">0</b></div>
+      <div class="row"><span>击杀</span><b id="over-kills">0</b></div>
+      <div class="row"><span>到达轮次</span><b id="over-cycle">1</b></div>
+    </div>
+    <button id="btn-restart" class="primary">再来一局</button>
+    <p class="hint">按 R 也可以快速重开</p>
+  </div>
+
+  <div id="loading">载入中…</div>
+</div>
+
+<script src="assets/atlas.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/input.js"></script>
+<script src="js/effects.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

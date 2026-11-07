@@ -1,0 +1,1883 @@
+{
+  "meta": {
+    "app": "plane-war-assets",
+    "version": "1.0.0",
+    "generator": "build_sprites.js (procedural pixel art, no external assets)",
+    "image": "plane_war_sprite_sheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 912,
+      "h": 2128
+    },
+    "scale": 4,
+    "note": "所有精灵为 4x 整数放大的像素画; 若按 1x 逻辑像素使用, 请将尺寸除以 4 (或使用 logicalSize)。",
+    "padding": 16,
+    "blocks": [
+      {
+        "id": "aircraft",
+        "title": "AIRCRAFT + ENEMIES",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 704,
+          "h": 528
+        },
+        "cell": {
+          "w": 176,
+          "h": 176
+        },
+        "columns": 4,
+        "rows": 3,
+        "frameCount": 11
+      },
+      {
+        "id": "boss",
+        "title": "BOSS",
+        "rect": {
+          "x": 0,
+          "y": 544,
+          "w": 320,
+          "h": 256
+        },
+        "cell": {
+          "w": 320,
+          "h": 256
+        },
+        "columns": 1,
+        "rows": 1,
+        "frameCount": 1
+      },
+      {
+        "id": "bullets",
+        "title": "BULLETS + LASERS",
+        "rect": {
+          "x": 336,
+          "y": 544,
+          "w": 576,
+          "h": 288
+        },
+        "cell": {
+          "w": 144,
+          "h": 144
+        },
+        "columns": 4,
+        "rows": 2,
+        "frameCount": 8
+      },
+      {
+        "id": "fx",
+        "title": "FX / EXPLOSION 8 FRAMES",
+        "rect": {
+          "x": 0,
+          "y": 848,
+          "w": 704,
+          "h": 528
+        },
+        "cell": {
+          "w": 176,
+          "h": 176
+        },
+        "columns": 4,
+        "rows": 3,
+        "frameCount": 12
+      },
+      {
+        "id": "items",
+        "title": "PICKUPS + UI ICONS",
+        "rect": {
+          "x": 0,
+          "y": 1392,
+          "w": 480,
+          "h": 240
+        },
+        "cell": {
+          "w": 120,
+          "h": 120
+        },
+        "columns": 4,
+        "rows": 2,
+        "frameCount": 8
+      },
+      {
+        "id": "decor",
+        "title": "BACKGROUND ELEMENTS",
+        "rect": {
+          "x": 0,
+          "y": 1648,
+          "w": 640,
+          "h": 480
+        },
+        "cell": {
+          "w": 160,
+          "h": 160
+        },
+        "columns": 4,
+        "rows": 3,
+        "frameCount": 12
+      }
+    ]
+  },
+  "frames": {
+    "player_idle": {
+      "frame": {
+        "x": 24,
+        "y": 20,
+        "w": 128,
+        "h": 136
+      },
+      "block": "aircraft",
+      "category": "player",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        32,
+        34
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "aircraft"
+      ]
+    },
+    "player_bank_left": {
+      "frame": {
+        "x": 192,
+        "y": 12,
+        "w": 144,
+        "h": 152
+      },
+      "block": "aircraft",
+      "category": "player",
+      "grid": {
+        "col": 1,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        38
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "aircraft"
+      ]
+    },
+    "player_bank_right": {
+      "frame": {
+        "x": 368,
+        "y": 12,
+        "w": 144,
+        "h": 152
+      },
+      "block": "aircraft",
+      "category": "player",
+      "grid": {
+        "col": 2,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        38
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "aircraft"
+      ]
+    },
+    "player_hit": {
+      "frame": {
+        "x": 548,
+        "y": 16,
+        "w": 136,
+        "h": 144
+      },
+      "block": "aircraft",
+      "category": "player",
+      "grid": {
+        "col": 3,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        34,
+        36
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "aircraft"
+      ]
+    },
+    "enemy_small_a": {
+      "frame": {
+        "x": 44,
+        "y": 220,
+        "w": 88,
+        "h": 88
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 0,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "enemy_small_b": {
+      "frame": {
+        "x": 220,
+        "y": 220,
+        "w": 88,
+        "h": 88
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 1,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "enemy_medium_a": {
+      "frame": {
+        "x": 380,
+        "y": 212,
+        "w": 120,
+        "h": 104
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 2,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        30,
+        26
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "enemy_medium_b": {
+      "frame": {
+        "x": 556,
+        "y": 212,
+        "w": 120,
+        "h": 104
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 3,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        30,
+        26
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "enemy_heavy": {
+      "frame": {
+        "x": 16,
+        "y": 376,
+        "w": 144,
+        "h": 128
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 0,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        32
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "enemy_heavy_elite": {
+      "frame": {
+        "x": 188,
+        "y": 372,
+        "w": 152,
+        "h": 136
+      },
+      "block": "aircraft",
+      "category": "enemy",
+      "grid": {
+        "col": 1,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        38,
+        34
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "aircraft"
+      ]
+    },
+    "player_shielded": {
+      "frame": {
+        "x": 356,
+        "y": 352,
+        "w": 168,
+        "h": 176
+      },
+      "block": "aircraft",
+      "category": "player",
+      "grid": {
+        "col": 2,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        44
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "aircraft"
+      ]
+    },
+    "boss_heavy": {
+      "frame": {
+        "x": 0,
+        "y": 552,
+        "w": 320,
+        "h": 240
+      },
+      "block": "boss",
+      "category": "boss",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          320,
+          256
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        80,
+        60
+      ],
+      "scale": 4,
+      "tags": [
+        "boss",
+        "boss"
+      ]
+    },
+    "bullet_player_basic": {
+      "frame": {
+        "x": 392,
+        "y": 584,
+        "w": 32,
+        "h": 64
+      },
+      "block": "bullets",
+      "category": "player",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        8,
+        16
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "bullets"
+      ]
+    },
+    "bullet_player_power": {
+      "frame": {
+        "x": 528,
+        "y": 576,
+        "w": 48,
+        "h": 80
+      },
+      "block": "bullets",
+      "category": "player",
+      "grid": {
+        "col": 1,
+        "row": 0,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        12,
+        20
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "bullets"
+      ]
+    },
+    "bullet_player_laser": {
+      "frame": {
+        "x": 676,
+        "y": 548,
+        "w": 40,
+        "h": 136
+      },
+      "block": "bullets",
+      "category": "player",
+      "grid": {
+        "col": 2,
+        "row": 0,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        10,
+        34
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "bullets"
+      ]
+    },
+    "bullet_player_missile": {
+      "frame": {
+        "x": 812,
+        "y": 568,
+        "w": 56,
+        "h": 96
+      },
+      "block": "bullets",
+      "category": "player",
+      "grid": {
+        "col": 3,
+        "row": 0,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        14,
+        24
+      ],
+      "scale": 4,
+      "tags": [
+        "player",
+        "bullets"
+      ]
+    },
+    "bullet_enemy_orb": {
+      "frame": {
+        "x": 376,
+        "y": 728,
+        "w": 64,
+        "h": 64
+      },
+      "block": "bullets",
+      "category": "enemy",
+      "grid": {
+        "col": 0,
+        "row": 1,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        16,
+        16
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "bullets"
+      ]
+    },
+    "bullet_enemy_dart": {
+      "frame": {
+        "x": 532,
+        "y": 724,
+        "w": 40,
+        "h": 72
+      },
+      "block": "bullets",
+      "category": "enemy",
+      "grid": {
+        "col": 1,
+        "row": 1,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        10,
+        18
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "bullets"
+      ]
+    },
+    "bullet_enemy_plasma": {
+      "frame": {
+        "x": 656,
+        "y": 720,
+        "w": 80,
+        "h": 80
+      },
+      "block": "bullets",
+      "category": "enemy",
+      "grid": {
+        "col": 2,
+        "row": 1,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        20,
+        20
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "bullets"
+      ]
+    },
+    "bullet_enemy_ring": {
+      "frame": {
+        "x": 800,
+        "y": 720,
+        "w": 80,
+        "h": 80
+      },
+      "block": "bullets",
+      "category": "enemy",
+      "grid": {
+        "col": 3,
+        "row": 1,
+        "cell": [
+          144,
+          144
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        20,
+        20
+      ],
+      "scale": 4,
+      "tags": [
+        "enemy",
+        "bullets"
+      ]
+    },
+    "explosion_00": {
+      "frame": {
+        "x": 4,
+        "y": 852,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 0
+    },
+    "explosion_01": {
+      "frame": {
+        "x": 180,
+        "y": 852,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 1,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 1
+    },
+    "explosion_02": {
+      "frame": {
+        "x": 356,
+        "y": 852,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 2,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 2
+    },
+    "explosion_03": {
+      "frame": {
+        "x": 532,
+        "y": 852,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 3,
+        "row": 0,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 3
+    },
+    "explosion_04": {
+      "frame": {
+        "x": 4,
+        "y": 1028,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 0,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 4
+    },
+    "explosion_05": {
+      "frame": {
+        "x": 180,
+        "y": 1028,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 1,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 5
+    },
+    "explosion_06": {
+      "frame": {
+        "x": 356,
+        "y": 1028,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 2,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 6
+    },
+    "explosion_07": {
+      "frame": {
+        "x": 532,
+        "y": 1028,
+        "w": 168,
+        "h": 168
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 3,
+        "row": 1,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        42,
+        42
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ],
+      "animation": "explosion",
+      "frameIndex": 7
+    },
+    "fx_muzzle_flash": {
+      "frame": {
+        "x": 52,
+        "y": 1252,
+        "w": 72,
+        "h": 72
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 0,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        18,
+        18
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ]
+    },
+    "fx_impact": {
+      "frame": {
+        "x": 224,
+        "y": 1248,
+        "w": 80,
+        "h": 80
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 1,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        20,
+        20
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ]
+    },
+    "fx_shield_break": {
+      "frame": {
+        "x": 364,
+        "y": 1212,
+        "w": 152,
+        "h": 152
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 2,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        38,
+        38
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ]
+    },
+    "fx_smoke": {
+      "frame": {
+        "x": 568,
+        "y": 1240,
+        "w": 96,
+        "h": 96
+      },
+      "block": "fx",
+      "category": "fx",
+      "grid": {
+        "col": 3,
+        "row": 2,
+        "cell": [
+          176,
+          176
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        24,
+        24
+      ],
+      "scale": 4,
+      "tags": [
+        "fx",
+        "fx"
+      ]
+    },
+    "pickup_power": {
+      "frame": {
+        "x": 16,
+        "y": 1408,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "pickup",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "pickup",
+        "items"
+      ]
+    },
+    "pickup_shield": {
+      "frame": {
+        "x": 136,
+        "y": 1408,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "pickup",
+      "grid": {
+        "col": 1,
+        "row": 0,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "pickup",
+        "items"
+      ]
+    },
+    "pickup_health": {
+      "frame": {
+        "x": 256,
+        "y": 1408,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "pickup",
+      "grid": {
+        "col": 2,
+        "row": 0,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "pickup",
+        "items"
+      ]
+    },
+    "pickup_bomb": {
+      "frame": {
+        "x": 376,
+        "y": 1408,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "pickup",
+      "grid": {
+        "col": 3,
+        "row": 0,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "pickup",
+        "items"
+      ]
+    },
+    "ui_coin": {
+      "frame": {
+        "x": 16,
+        "y": 1528,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "ui",
+      "grid": {
+        "col": 0,
+        "row": 1,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "ui",
+        "items"
+      ]
+    },
+    "ui_heart": {
+      "frame": {
+        "x": 136,
+        "y": 1528,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "ui",
+      "grid": {
+        "col": 1,
+        "row": 1,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "ui",
+        "items"
+      ]
+    },
+    "ui_star": {
+      "frame": {
+        "x": 256,
+        "y": 1528,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "ui",
+      "grid": {
+        "col": 2,
+        "row": 1,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "ui",
+        "items"
+      ]
+    },
+    "ui_gem": {
+      "frame": {
+        "x": 376,
+        "y": 1528,
+        "w": 88,
+        "h": 88
+      },
+      "block": "items",
+      "category": "ui",
+      "grid": {
+        "col": 3,
+        "row": 1,
+        "cell": [
+          120,
+          120
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        22,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "ui",
+        "items"
+      ]
+    },
+    "bg_star_small": {
+      "frame": {
+        "x": 58,
+        "y": 1706,
+        "w": 44,
+        "h": 44
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 0,
+        "row": 0,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        11,
+        11
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_star_medium": {
+      "frame": {
+        "x": 210,
+        "y": 1698,
+        "w": 60,
+        "h": 60
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 1,
+        "row": 0,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        15,
+        15
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_star_bright": {
+      "frame": {
+        "x": 354,
+        "y": 1682,
+        "w": 92,
+        "h": 92
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 2,
+        "row": 0,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        23,
+        23
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_star_twinkle": {
+      "frame": {
+        "x": 518,
+        "y": 1686,
+        "w": 84,
+        "h": 84
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 3,
+        "row": 0,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        21,
+        21
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_asteroid_small": {
+      "frame": {
+        "x": 26,
+        "y": 1838,
+        "w": 108,
+        "h": 100
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 0,
+        "row": 1,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        27,
+        25
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_asteroid_large": {
+      "frame": {
+        "x": 168,
+        "y": 1820,
+        "w": 144,
+        "h": 136
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 1,
+        "row": 1,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        34
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_meteor_small": {
+      "frame": {
+        "x": 364,
+        "y": 1836,
+        "w": 72,
+        "h": 104
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 2,
+        "row": 1,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        18,
+        26
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_meteor_large": {
+      "frame": {
+        "x": 504,
+        "y": 1812,
+        "w": 112,
+        "h": 152
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 3,
+        "row": 1,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        28,
+        38
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_cloud_a": {
+      "frame": {
+        "x": 8,
+        "y": 2004,
+        "w": 144,
+        "h": 88
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 0,
+        "row": 2,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        22
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_cloud_b": {
+      "frame": {
+        "x": 180,
+        "y": 2016,
+        "w": 120,
+        "h": 64
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 1,
+        "row": 2,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        30,
+        16
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_planet_small": {
+      "frame": {
+        "x": 332,
+        "y": 1984,
+        "w": 136,
+        "h": 128
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 2,
+        "row": 2,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        34,
+        32
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    },
+    "bg_nebula_puff": {
+      "frame": {
+        "x": 488,
+        "y": 1992,
+        "w": 144,
+        "h": 112
+      },
+      "block": "decor",
+      "category": "background",
+      "grid": {
+        "col": 3,
+        "row": 2,
+        "cell": [
+          160,
+          160
+        ]
+      },
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "logicalSize": [
+        36,
+        28
+      ],
+      "scale": 4,
+      "tags": [
+        "background",
+        "decor"
+      ]
+    }
+  },
+  "animations": {
+    "explosion": {
+      "fps": 18,
+      "loop": false,
+      "frames": [
+        "explosion_00",
+        "explosion_01",
+        "explosion_02",
+        "explosion_03",
+        "explosion_04",
+        "explosion_05",
+        "explosion_06",
+        "explosion_07"
+      ],
+      "note": "从小到大的爆炸; 也可只播 00-04 作为小型爆炸"
+    },
+    "explosion_small": {
+      "fps": 20,
+      "loop": false,
+      "frames": [
+        "explosion_00",
+        "explosion_01",
+        "explosion_02",
+        "explosion_03",
+        "explosion_04"
+      ]
+    },
+    "player_hit_blink": {
+      "fps": 10,
+      "loop": true,
+      "frames": [
+        "player_idle",
+        "player_hit"
+      ],
+      "note": "受击闪烁: 在两张图之间切换"
+    },
+    "player_bank": {
+      "fps": 12,
+      "loop": true,
+      "frames": [
+        "player_bank_left",
+        "player_idle",
+        "player_bank_right",
+        "player_idle"
+      ],
+      "note": "左右倾斜(横移时播放)"
+    },
+    "star_twinkle": {
+      "fps": 6,
+      "loop": true,
+      "frames": [
+        "bg_star_small",
+        "bg_star_twinkle",
+        "bg_star_bright",
+        "bg_star_twinkle"
+      ]
+    },
+    "enemy_bullet_orb": {
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "bullet_enemy_orb"
+      ]
+    }
+  },
+  "categories": {
+    "player": [
+      "player_idle",
+      "player_bank_left",
+      "player_bank_right",
+      "player_hit",
+      "player_shielded",
+      "bullet_player_basic",
+      "bullet_player_power",
+      "bullet_player_laser",
+      "bullet_player_missile"
+    ],
+    "enemy": [
+      "enemy_small_a",
+      "enemy_small_b",
+      "enemy_medium_a",
+      "enemy_medium_b",
+      "enemy_heavy",
+      "enemy_heavy_elite",
+      "bullet_enemy_orb",
+      "bullet_enemy_dart",
+      "bullet_enemy_plasma",
+      "bullet_enemy_ring"
+    ],
+    "boss": [
+      "boss_heavy"
+    ],
+    "fx": [
+      "explosion_00",
+      "explosion_01",
+      "explosion_02",
+      "explosion_03",
+      "explosion_04",
+      "explosion_05",
+      "explosion_06",
+      "explosion_07",
+      "fx_muzzle_flash",
+      "fx_impact",
+      "fx_shield_break",
+      "fx_smoke"
+    ],
+    "pickup": [
+      "pickup_power",
+      "pickup_shield",
+      "pickup_health",
+      "pickup_bomb"
+    ],
+    "ui": [
+      "ui_coin",
+      "ui_heart",
+      "ui_star",
+      "ui_gem"
+    ],
+    "background": [
+      "bg_star_small",
+      "bg_star_medium",
+      "bg_star_bright",
+      "bg_star_twinkle",
+      "bg_asteroid_small",
+      "bg_asteroid_large",
+      "bg_meteor_small",
+      "bg_meteor_large",
+      "bg_cloud_a",
+      "bg_cloud_b",
+      "bg_planet_small",
+      "bg_nebula_puff"
+    ]
+  }
+}
