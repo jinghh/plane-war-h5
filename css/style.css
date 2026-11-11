@@ -90,6 +90,42 @@ h2 {
 
 .best b { color: #ffd27a; }
 
+/* ---------- 皮肤选择 ---------- */
+.skins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--u) * 4);
+}
+
+.skin-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--u) * 1);
+  padding: calc(var(--u) * 2) calc(var(--u) * 2.5);
+  border: 1px solid rgba(130, 170, 240, .32);
+  border-radius: calc(var(--u) * 2);
+  background: rgba(12, 20, 38, .66);
+  color: #9fc4f2;
+  font-size: calc(var(--u) * 5.2);
+  line-height: 1;
+}
+
+.skin-btn canvas {
+  width: calc(var(--u) * 20);
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.skin-btn.on {
+  border-color: #7fd4ff;
+  color: #eaf6ff;
+  background: rgba(28, 60, 110, .82);
+  box-shadow: 0 0 calc(var(--u) * 6) rgba(80, 180, 255, .45);
+}
+
 .hint {
   margin: 0;
   font-size: calc(var(--u) * 5.6);

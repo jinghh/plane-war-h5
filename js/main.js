@@ -68,6 +68,51 @@
     }
   }
 
+  /* ---------- 皮肤选择器（标题页，选择写入 localStorage） ---------- */
+  function buildSkinPicker() {
+    var host = document.getElementById('skin-picker');
+    if (!host || !PW.Skin) return;
+    host.innerHTML = '';
+
+    PW.Skin.list.forEach(function (skin) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'skin-btn' + (PW.Skin.id() === skin.id ? ' on' : '');
+      btn.setAttribute('data-skin', skin.id);
+
+      var f = PW.Assets.frame(skin.prefix + '_idle');
+      if (f) {
+        var cv = document.createElement('canvas');
+        /* 图集是 4x 整数放大，等比例缩回逻辑尺寸即还原像素画 */
+        cv.width = f.logicalSize[0];
+        cv.height = f.logicalSize[1];
+        var c = cv.getContext('2d');
+        c.imageSmoothingEnabled = false;
+        c.drawImage(PW.Assets.img, f.frame.x, f.frame.y, f.frame.w, f.frame.h,
+          0, 0, f.logicalSize[0], f.logicalSize[1]);
+        btn.appendChild(cv);
+      }
+
+      var name = document.createElement('span');
+      name.textContent = skin.name;
+      btn.appendChild(name);
+
+      btn.addEventListener('click', function () {
+        PW.Audio.unlock();
+        if (PW.Skin.set(skin.id)) {
+          if (game && game.player) game.player.setSkin(PW.Skin.def());
+          PW.Audio.play('click');
+        }
+        var all = host.querySelectorAll('.skin-btn');
+        for (var i = 0; i < all.length; i++) {
+          all[i].classList.toggle('on', all[i] === btn);
+        }
+      });
+
+      host.appendChild(btn);
+    });
+  }
+
   function onState(state, g) {
     els.title.classList.toggle('show', state === 'title');
     els.pause.classList.toggle('show', state === 'paused');
@@ -149,6 +194,7 @@
         return;
       }
       loading.classList.add('hidden');
+      buildSkinPicker();
       game.setState('title');
       window.requestAnimationFrame(frame);
     });
